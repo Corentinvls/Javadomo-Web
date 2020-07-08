@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    background: url('../images/background.png') no-repeat fixed center;
+    background-size: cover;
+}
+
+/******* HEADER *******/
+
+header {
+    margin-top: 4em;
+}
+
+
+.headerText {
+    width: 40%;
+    position: absolute;
+    left: 5%;
+
+}
+
+    #headerSlide article {
+        height: 35em;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headerSlide article:nth-of-type(1) {
+        color: white;
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0) 52.1%), url('../images/residential-houses-3-1457398-640x480.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #headerSlide article:nth-of-type(2) {
+        color: white;
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0) 52.1%), url('../images/pc-bits-017-gfx-card-closeup-3-1519836-640x480.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #headerSlide article:nth-of-type(3) {
+        color: white;
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0) 52.1%), url('../images/scrum.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+        #headerSlide article h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        #headerSlide article p {
+            text-align: center;
+            font-family: "Gill Sans" , sans-serif;
+        }
+
+    .mySlides {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .mySlides h2 {
+            height: 20%;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-family: 'Orbitron', sans-serif;
+            color: #ff1414bf;
+        }
+
+        .mySlides p {
+            line-height: 2em;
+        }
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #ff1414bf;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 2em;
+    outline: none;
+}
+
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%);
+    transition: 0.3s;
+    border-radius: 0 2em 2em 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transition: 0.3s;
+    border-radius: 2em 0 0 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.w3-display-left:hover, .w3-display-right:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/****** NAVBAR ****/
+
+nav {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 9999;
+}
+
+#icon {
+    width: 15%;
+    min-width: 2em;
+}
+
+
+#icon,
+#name {
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff1414bf;
+    font-size: 25px;
+
+}
+
+#logo {
+    width: 30%;
+    justify-content: left;
+    display: inline-block;
+}
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        float: right;
+        margin-right: 25px;
+    }
+
+    nav ul::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+        nav ul li {
+            display: flex;
+            float: left;
+            padding-right: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+    nav li,
+    footer li {
+        padding: 5px;
+        display: inline-block;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0;
+    }
+
+    nav a:hover {
+        color: #ff346a;
+        border-bottom: 2px solid rgba(255, 58, 108, 0.85);
+    }
+
+        .sous {
+            display: none;
+            box-shadow: 0 1px 2px #CCC;
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+        }
+
+            nav > ul li:hover .sous {
+                display: block;
+            }
+
+            .sous li {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .sous a {
+                padding: 10px;
+                border-bottom: none;
+            }
+
+            .sous a:hover {
+                border-bottom: none;
+                background-color: RGBa(200, 200, 200, 0.1);
+            }
+
+            .deroulant > a::after {
+                content: "▼";
+                font-size: 12px;
+            }
+
+/****** ATELIERS ******/
+
+#atelierN {
+    display: block;
+    height: 4em; /*same height as header*/
+    margin-top: -4em; /*same height as header*/
+    visibility: hidden;
+}
+.displayNone{
+    display: none;
+}
+.ateliers {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2em;
+
+}
+
+.atelierN {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .atelierN h2 {
+        width: 100%;
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bddMedia{
+        display: none;
+    }
+
+    .bdd{
+        display: block;
+    }
+
+        .h2Atelier {
+            color: #ff1414bf;
+            font-family: 'Orbitron', sans-serif;
+            padding-right: 0.2em;
+        }
+
+    .previousAtelier, .nextAtelier {
+        padding: 0em 4em;
+        color: #ff1414bf;
+        font-size: 25px;
+    }
+
+    .insideAtelierN {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: #CCCCCC;
+        border: 0.2em outset rgba(0, 0, 0, 0.7);
+        border-radius: 0.5em;
+        width: 100%;
+        line-height: 4em;
+    }
+
+        .insideAtelierN article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .insideAtelierN article:first-child {
+            width: 50%;
+            min-height: 30em;
+            background:rgba(0, 0, 0, 0.8);
+        }
+
+        .insideAtelierN article:nth-child(2) {
+            width: 50%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .insideAtelierN article:last-child {
+            width: 100%;
+            text-align: center;
+            padding-top: 1em;
+            min-height: 10em;
+            max-height: 40em;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+        }
+
+            .insideAtelierN article h3 {
+                text-align: center;
+                color: #ff3a6c;
+                font-size: 2em;
+            }
+
+            .insideAtelierN article p {
+                width: 65%;
+                align-self: center;
+                text-align: center;
+                font-family: "Gill Sans" , serif;
+            }
+
+    .buttonInside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        border: none;
+    }
+
+        .buttonInside button {
+            border: none;
+            width: 3%;
+            height: 2em;
+            font-size: 1.5em;
+            color: #ff346a;
+            transition: 0.3s;
+            background-color: rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .buttonInside button:hover{
+            transition: 0.3s;
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: scale(0.9);
+        }
+
+        .buttonDownload {
+            display: block !important;
+            width: 50% !important;
+            border-radius: 20px;
+            margin: 15px auto auto;
+            padding: 10px;
+            font-size: 1em;
+            filter: drop-shadow(2px 2px 2px black);
+            transition: .3s;
+        }
+
+        .buttonDownload:hover {
+            transition: .3s;
+            transform: scale(0.9);
+        }
+
+        #btnInsideLeft{
+            border-radius: 0 1em 1em 0;
+        }
+        #btnInsideRight{
+            border-radius: 1em 0 0 1em;
+        }
+
+    button , input[type=submit] {
+        font-family: "Gill Sans", sans-serif !important;
+    }
+
+
+    #articleRasp1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/raspbian.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleBdd1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/data.png') no-repeat center;
+        background-size: cover;
+    }
+    #articleBdd4 {
+        background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+
+    }
+    #articleBdd5 {
+        background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+
+    }
+
+    #articleBdd7 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/phpmyadmin.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleJAVA1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/java.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleJAVA5 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/jdbc.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleJAVA7 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/codejava.png') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleArduino1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/arduino.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleArduino4 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/circuit2.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleArduino5 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/circuit.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleArduino7 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/house.jpeg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleWeb1 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/people.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleWeb5 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/site.png') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleWeb7 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/fin.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #articleJAVA6{
+        align-items: center;
+    }
+
+        .carousel {
+            width: 100%;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+
+            .carousel figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                padding: 0;
+                font-size: 0;
+                text-align: center;
+                animation: 30s slidy infinite;
+            }
+
+                .carousel img {
+                    width: 20%;
+                    height: auto;
+                    float: right;
+                    max-height: 600px;
+                }
+
+@keyframes slidy {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+
+/*******CONTACT*******/
+
+#contact {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    margin-top: 2em;
+}
+
+#formContact {
+    padding: 1em;
+    width: 50%;
+}
+
+#contactLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    width: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/contact.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+    #contactLink h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: #ff1414bf;
+        font-size: 2em;
+    }
+    #contactLink h3 {
+        font-family: 'Orbitron', sans-serif;
+        color: rgba(205, 255, 178, 0.75);
+        font-size: 1.5em;
+    }
+
+    #contactLink p {
+        color: rgba(205, 205, 205, 0.75);
+        font-size: 1em;
+    }
+
+    #contactLink i {
+        transition: 0.3s;
+        font-size: 2em;
+        color: #ffffff;
+    }
+
+    #contactLink i:hover {
+        transition: 0.3s;
+        transform: scale(0.9);
+    }
+
+.socials {
+    flex-direction: row;
+    text-align: center;
+}
+
+    .socials a {
+        margin: 1em;
+        text-decoration: none;
+    }
+
+.folio {
+    font-family: 'Orbitron', sans-serif;
+    transition: 0.3s;
+    color: #ff1414bf;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.folio:hover {
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 22px;
+    margin: 5px 5px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    background-color: #f1f3f6;
+    border-radius: 10px;
+    border: 3px solid #f1f3f6;
+    cursor: pointer;
+}
+
+#msg {
+    resize: vertical;
+    min-height: 5em;
+}
+
+#subject {
+    resize: none;
+    max-height: 3em;
+}
+
+.wrapBouton {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    display: block !important;
+    width: 50% !important;
+    border-radius: 20px;
+    margin: 15px auto auto;
+    font-family: serif;
+    padding: 10px;
+    font-size: 1em;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: .3s;
+}
+
+input[type=submit]:hover {
+    transition: .3s;
+    transform: scale(0.9);
+}
+
+/********* FOOTER **********/
+
+footer {
+    width: 100%;
+    color: black;
+    float: left;
+    margin-top: 1em;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d4d5d6;
+    background: rgb(255, 255, 255);
+}
+
+    footer ul {
+        padding-left: 30px;
+    }
+
+    footer span {
+        padding-right: 30px;
+    }
+
+    footer a {
+        color: #ff1414bf;
+        text-decoration: none;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+/********* MEDIA QUERIES *********/
+
+@media screen and (max-width: 640px) {
+    #contact {
+        flex-direction: column;
+    }
+
+    .insideAtelierN {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insideAtelierN article {
+        width: 100% !important;
+        min-height: 20em !important;
+    }
+
+    .mySlides p {
+        line-height: 19px;
+    }
+
+    #contactLink {
+        width: 100%;
+        height: 500px;
+    }
+    .display{
+        display: none;
+    }
+    .displayNone{
+        display: flex;
+        width: 25em;
+    }
+
+    .folio:last-child {
+        margin-top: 15px;
+    }
+
+    #formContact {
+        width: 80%;
+    }
+
+    .mySlides span{
+        display: none;
+    }
+
+    #headerSlide article h2{
+        margin-bottom: 10px;
+    }
+
+    .headerText {
+        width: 90%;
+        position: unset;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #headerSlide article{
+        align-items: center;
+    }
+
+    #headerSlide article:nth-of-type(1) {
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0.8) 100%), url('../images/residential-houses-3-1457398-640x480.jpg') no-repeat center;
+    }
+
+    #headerSlide article:nth-of-type(2) {
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0.8) 100%), url('../images/pc-bits-017-gfx-card-closeup-3-1519836-640x480.jpg') no-repeat center;
+    }
+
+    #headerSlide article:nth-of-type(3) {
+        background: linear-gradient(55deg, rgba(0, 0, 0, 0.7) 52%, rgba(0, 0, 0, 0.8) 100%), url('../images/scrum.jpeg') no-repeat center;
+    }
+
+    .bddMedia{
+        display: block;
+    }
+
+    .bdd {
+        display: none;
+    }
+
+    .previousAtelier, .nextAtelier{
+        padding: 0 1em;
+    }
+
+    .buttonInside{
+        top: 17%;
+        height: 80%;
+    }
+        .buttonInside button {
+            width: 8%;
+            height: auto;
+        }
+
+    .buttonInside button:hover{
+        transition: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: none;
+    }
+
+    .w3-display-left:hover, .w3-display-right:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+@media screen and (min-height:1200px) {
+    .w3-button{
+        top: 27%;
+    }
+}

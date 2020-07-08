@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Orbitron&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a316a741dd.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+    <title>JavaDomo</title>
+</head>
+<body>
+<header>
+    <nav>
+        <!-- logo en haut à gauche -->
+        <div id="logo">
+            <img src="assets/images/logo.png" alt="Logo" id="icon">
+            <span id="name">JavaDomo</span>
+        </div>
+
+        <!-- liste en haut à droite -->
+        <ul>
+            <li><a href="" class="active">Presentation</a></li>
+            <li class="deroulant">
+                <a href="#">Ateliers&ensp;</a>
+                <ul class="sous">
+                    <li onclick="linkAtelier(1)"><a href="#atelierN">Atelier 1</a></li>
+                    <li onclick="linkAtelier(2)"><a href="#atelierN">Atelier 2</a></li>
+                    <li onclick="linkAtelier(3)"><a href="#atelierN">Atelier 3</a></li>
+                    <li onclick="linkAtelier(4)"><a href="#atelierN">Atelier 4</a></li>
+                    <li onclick="linkAtelier(5)"><a href="#atelierN">Atelier 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#contactLink">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="headerSlide">
+        <article class="mySlides">
+            <div class="headerText">
+                <h2>Welcome</h2>
+                <p>Bienvenue sur la page du projet domotique de la coding Factory by Itescia.<br>
+                    Dans le cadre de la formation "Codeur informatique" en temps plein, lors des semaines en autonomies,
+                    les projets réalisés par les différents groupes sont appelés : Projet digitalisés et servent à
+                    apprendre les différents langages de développement nécessaires à devenir un développeur "Full-Stack".
+                    <br>Ces projets sont présentés en fin d'année à un jury afin de définir une note pour l'épreuve
+                    certifiante de Code.</p>
+            </div>
+        </article>
+        <article class="mySlides">
+            <div class="headerText">
+                <h2>Présentation</h2>
+                <p>Le projet que nous allons vous présenter est un projet de domotique regroupant différentes
+                    technologies lors des projets digitalisés.<br>
+                    Ce projet à été réalisé par le groupe : Corentin Vallois et Brian Lecarpentier en première année à
+                    la Coding Factory by Itescia et à été décomposé en 5 ateliers avec des langages différents.<br>
+                    <span>Ces ateliers sont les suivants : <br/>
+                    - Atelier 1 : Larp et Mise en place de Raspberry PI <br/>
+                    - Atelier 2 : Création de base de donnée MySQL <br/>
+                    - Atelier 3 : Réalisation de l'application domotique en JAVA avec interface graphique <br/>
+                    - Atelier 4 : Finalisation de l'application et jointure avec Arduino pour l'électronique <br/>
+                    - Atelier 5 : Réalisation du site vitrine en HTML / CSS / JavaScript et PHP <br/> </span>
+                </p>
+            </div>
+        </article>
+        <article class="mySlides">
+            <div class="headerText">
+                <h2>Organisation</h2>
+                <p> Nous avons utilisé les méthodes agiles et SCRUM pour rendre à bien ce projet , en utilisant notre
+                    Scrumboard pour la mise en place de nos sprints et des tâches à réaliser chaque semaine.<br>
+                    Nous avons utilisé les méthodes de Pair programming , et de répartition des tâches la plupart du
+                    temps.<br>Nous avons aussi utilisé GitHub pour le partage des sources et notre répartition des
+                    tâches.
+                </p>
+            </div>
+        </article>
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+</header>
+<div class="container">
+    <span id="atelierN"></span>
+    <div class="ateliers" id="ateliers">
+        <div class="atelierN">
+            <h2><span class="previousAtelier" onclick="plusAteliers(-1)"> &#10094; </span> <span class="h2Atelier"> Atelier 1 </span>:
+                Larp et Raspberry
+                PI <span class="nextAtelier" onclick="plusAteliers(+1)">  &#10095; </span></h2>
+            <div id="divLarp1" class="insideAtelierN">
+                <article id="articleLarp1">
+                    <h3> Compétences acquises </h3>
+                    <p> Progression en algorithmie avec Larp , apprentissage du systeme Raspbian avec l'installation
+                        du Raspberry PI qui permet une approche des machines debian en ligne de commandes, decouverte
+                        de la mise en place de serveur.
+                    </p>
+                </article>
+                <article id="articleLarp2">
+                    <h3> Backlog </h3>
+                    <p> - Améliorer sa logique de programmation<br>
+                        - Produire des algorithmes<br>
+                        - Produire de logigrammes<br>
+                        - Installer Raspbian sur la Raspberry<br>
+                        - Créer un serveur<br>
+                        - Créer un manuel utilisateur
+                    </p>
+                </article>
+                <article id="articleLarp3">
+                    <h3> Retour d'expérience </h3>
+                    <p> Premier atelier utile pour que tous les élèves apprennent les bases de l'algorithmie, un peu trop simple
+                        pour des personnes ayant déjà un peu pratiqué. La partie Raspberry était très intéressante.
+                        Elle nous a permis de bien progresser en bash et de comprendre les concepts de base de ce qu'est
+                        un serveur.
+                    </p>
+                </article>
+            </div>
+            <div id="divLarp2" class="insideAtelierN">
+                <article id="articleLarp4">
+                    <h3> Les Algos effectués </h3>
+                    <p> - Tri par selection<br>
+                        - Tri par insertion<br>
+                        - Tri par dichotomie<br>
+                        - Equation du second degré<br>
+                        - Palindrome dans une phrase<br>
+                        - Suite de Fibonacci
+                    </p>
+                </article>
+                <article id="articleLarp5">
+                    <h3> Diffultés rencontrées </h3>
+                    <p> - Mise en place de la VM windows sur mac<br>
+                        - Découverte du logigramme<br>
+                        - Larp possède peu de fonction ( comme la fonction split )
+                    </p>
+                </article>
+                <article id="articleLarp6">
+                    <h3> Quelques un de nos exercices </h3>
+                    <img class="display" src="./assets/images/larp.jpeg">
+                    <img class="displayNone" src="./assets/images/minLarp.png">
+                </article>
+            </div>
+            <div id="divRasp1" class="insideAtelierN">
+                <article id="articleRasp1">
+                    <h3> Découverte du Raspberry </h3>
+                    <p> Le Raspberry Pi est ce qu’on appelle un nano-ordinateur. De la taille d’une carte de crédit,
+                        il est équipé du strict nécessaire :<br>
+                        Un microprocesseur ARM<br>
+                        De la mémoire RAM<br>
+                        Une carte vidéo<br>
+                        Une carte ethernet<br>
+                        Le Wi-fi<br>
+                        Le Bluetooth<br>
+                    </p>
+                </article>
+                <article id="articleRasp2">
+                    <h3> Mise en place </h3>
+                    <p> Dans le cadre de cet atelier , il nous a était demandé d'installer Raspbian, un OS équivalant
+                        a Debian, sur le Raspberry. Ensuite nous avons réalisé les étapes suivantes:<br>
+                        - Activation du SSh pour ce connecter depuis un autre ordinateur<br>
+                        - Créer un nouveal utilisateur avec tous les droits<br>
+                        - Configuration du pare-feu<br>
+                        - Installation d'Apache
+                    </p>
+                </article>
+                <article id="articleRasp3">
+                    <h3> Manuel Utilisateur </h3>
+                    <p> Nous disposons d'un manuel utilisateur afin de pouvoir installer et configurer le Raspberry PI
+                        avec toutes les dépendances affiliées. Il vous sera donc possible d'en faire usage même sans
+                        connaissances préalable.
+                        <button class="buttonDownload" onclick="window.location.href='assets/ressources/Manuel_utilisateur_raspberry_PI_3.pdf';"> Télécharger le
+                            manuel utilisateur</button>
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="atelierN">
+            <h2><span class="previousAtelier" onclick="plusAteliers(-1)"> &#10094; </span> <span class="h2Atelier">Atelier 2 </span>:
+                <span class="bdd">Base de données
+                MySQL</span> <span class="bddMedia">BDD Mysql</span> <span class="nextAtelier"
+                                                                           onclick="plusAteliers(+1)">  &#10095; </span>
+            </h2>
+            <div id="divBdd1" class="insideAtelierN">
+                <article id="articleBdd1">
+                    <h3> Compétences acquises </h3>
+                    <p> Lors de cet atelier, nous avons appris la création et la gestion d'une base de donnée en MySQL.
+                        Nous avons acquis des compétences techniques en langage MySQL , en administration de base de
+                        données
+                        avec l'outil web phpmyadmin. Nous avons également pu expérimenter un certain nombre de requêtes
+                        plus ou moins complexes.
+                    </p>
+                </article>
+                <article id="articleBdd2">
+                    <h3> Backlog </h3>
+                    <p> - Création d'une base de données.<br>
+                        - Création des différentes tables <br>
+                        - Gestion des foreign key <br>
+                        - Création des administrateurs de la Bdd<br>
+                        - Remplissage de données<br>
+                        - Préparation des réquêtes
+                    </p>
+                </article>
+                <article id="articleBdd3">
+                    <h3> Retour d'expériences </h3>
+                    <p> Atelier plutot facile dans l'ensemble , avec des exercices et des requêtes SQL en grande partie
+                        simpliste. Bon pour de l'entrainement débutant.
+                    </p>
+                </article>
+            </div>
+            <div id="divBdd2" class="insideAtelierN">
+                <article style="display: none" id="articleBdd4">
+
+                </article>
+                <article style="width: 100%; align-items: center;" id="articleBdd5">
+                    <img  style="width: 90%; " src="assets/images/requetes.png">
+                </article>
+                <article id="articleBdd6">
+                    <h3> Lien de la Base de données </h3>
+                    <button class="buttonDownload" onclick="window.location.href='assets/ressources/JAVADOMO.sql';">Télécharger notre BDD</button>
+                </article>
+            </div>
+            <div id="divBdd3" class="insideAtelierN">
+                <article id="articleBdd7">
+                    <h3> Points positifs </h3>
+                    <p> - Facilité d'appréhension <br/>
+                        - Répartition des tâches intuitive <br/>
+                        - Thème sympathique
+                    </p>
+                </article>
+                <article id="articleBdd8">
+                    <h3> Points négatifs </h3>
+                    <p> - Trop de temps pour le peu de travail <br/>
+                        - Remplissage des datas trop long et rébarbatif <br/>
+                        - Ajout d'exercices incompréhensibles <br>
+                        - Les réquêtes complexes ne sont pas pertinentes avec le projet
+                    </p>
+                </article>
+                <article id="articleBdd9">
+                    <h3> Conclusion </h3>
+                    <p> Atelier pratique pour revoir les bases apprisent les semaines précédentes et bien appréhender
+                        le SQL avec PhpMyAdmin , cependant , les énnoncés des exercices devraient être améliorés
+                        et liés directement au programme JAVA dans le cadre du projet car trop peu d'intérêt seuls.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="atelierN">
+            <h2><span class="previousAtelier" onclick="plusAteliers(-1)"> &#10094; </span> <span class="h2Atelier">Atelier 3 </span>:
+                Logiciel JAVA
+                <span class="nextAtelier" onclick="plusAteliers(+1)">  &#10095; </span></h2>
+            <div id="divJava1" class="insideAtelierN">
+                <article id="articleJAVA1">
+                    <h3> Compétences </h3>
+                    <p> Cet atelier 3 nous a parmis d'approfondir nos connaissances en Java, de lier le langage Java
+                        avec une base de données grace à l'utilisation de JDBC, de créer des vues avec Java Swing et de
+                        nous
+                        améliorer dans la programmation orientée objet.
+                    </p>
+                </article>
+                <article id="articleJAVA2">
+                    <h3> Backlog </h3>
+                    <p> - Java qui doit communiquer directement avec la base de données.<br>
+                        - Connexion de l'utilisateur à l'application.<br>
+                        - Gestion des utilisateurs d'une maison.<br>
+                        - Gestion des pièces du logement.<br>
+                        - Gestion des thermostats du logement.<br>
+                        - Gestion des lumières du logement.<br>
+                        - Gestion des fichers caches et config.<br>
+                    </p>
+                </article>
+                <article id="articleJAVA3">
+                    <h3> Retour d'expérience </h3>
+                    <p> Atelier intéressant et instructif malgré une complexité beaucoup plus importante que les
+                        deux précédents ateliers. Grande montée en compétence en programmation Java, ainsi qu'en
+                        structure de code.
+                    </p>
+                </article>
+            </div>
+            <div id="divJava2" class="insideAtelierN">
+                <article id="articleJAVA4">
+                    <h3> Difficultés rencontrées </h3>
+                    <p> Mise en place globale et compréhension de JDBC et de Swing sans aucune compétence dans ces
+                        domaines au préalable.<br> Trop grande quantité de travail pour le temps impartis.<br>
+                    </p>
+                </article>
+                <article id="articleJAVA5">
+                    <h3> Et si c'était à refaire ? </h3>
+                    <p> - Créer des fonctions globales pour la création des composants pour les vues,pour les différentes
+                        actions (lien entre les vues), afin d'éviter les répétitions de code et réduire de moitié le
+                        nombre de lignes totale. <br/>
+                        - Structuration du code par modules plutot que par composants.
+                    </p>
+                </article>
+                <article id="articleJAVA6">
+                    <h3> Quelques screen de l'application </h3>
+                    <div class ="carousel">
+                        <figure>
+                            <img src="assets/images/screen1.png">
+                            <img src="assets/images/screen2.png">
+                            <img src="assets/images/screen3.png">
+                            <img src="assets/images/screen4.png">
+                            <img src="assets/images/screen5.png">
+                            <img src="assets/images/screen6.png">
+                        </figure>
+                    </div>
+                </article>
+            </div>
+            <div id="divJava3" class="insideAtelierN">
+                <article id="articleJAVA7">
+                    <h3> Points positifs </h3>
+                    <p> - Atelier globalement bon pour renforcer ses compétences en JAVA <br/>
+                        - Backlog intéréssant<br>
+                        - Première création d'interface graphique avec Java.<br>
+                        - Première liaison entre une base de données et un script.
+                    </p>
+                </article>
+                <article id="articleJAVA8">
+                    <h3> Points négatifs </h3>
+                    <p> - Difficile de se lancer avec JDBC et Swing sans cours.<br/>
+                        - Atelier trop court pour la quantité de travail<br>
+                        - Une fois lancé,  le developpement de l'application devient répétitif
+                    </p>
+                </article>
+                <article id="articleJAVA9">
+                    <h3> Idées d'améliorations </h3>
+                    <p> - Pourquoi ne pas utiliser JavaFX au lieu de Swing ?<br/>
+                        - Cours d'introduction à JDBC et Swing/JavaFX<br/>
+                        - Plus de temps pour l'atelier / Moins de quantité de travail pour le même temps
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="atelierN">
+            <h2><span class="previousAtelier" onclick="plusAteliers(-1)"> &#10094; </span> <span class="h2Atelier">Atelier 4</span>:
+                Java et Arduino
+                <span class="nextAtelier" onclick="plusAteliers(+1)">  &#10095; </span></h2>
+            <div id="divArduino1" class="insideAtelierN">
+                <article id="articleArduino1">
+                    <h3> Compétences </h3>
+                    <p> Avec cet atelier qui venait complété l'atelier 3 , nous avons appris et progressé avec Arduino
+                        et son langage C , quelques notions d'électronique pour la réalisation de la maquette connectée.
+                    </p>
+                </article>
+                <article id="articleArduino2">
+                    <h3> Backlog </h3>
+                    <p> - Liaison du logiciel avec Arduino<br>
+                        - Mise en place de la maquette<br>
+                        - Eclairage d'une maison a l'aide du logiciel<br>
+                        - Gestion de la température a l'aide du logiciel
+
+                    </p>
+                </article>
+                <article id="articleArduino3">
+                    <h3> Retour d'expériences </h3>
+                    <p> Atelier en harmonie avec le précédent, assez libre pour pouvoir réaliser la maquette. Arduino et
+                        le côté électronique fût un challenge technique en plus. Découverte de l'IoT efficace.
+                    </p>
+                </article>
+            </div>
+            <div id="divArduino2" class="insideAtelierN">
+                <article id="articleArduino4">
+                </article>
+                <article id="articleArduino5">
+                </article>
+                <article id="articleArduino6">
+                    <h3> Difficultés rencontrées </h3>
+                    <p> Assez compliqué de lancer le projet Arduino sans aucune compétences ni introduction. Très
+                        compliqué de comprendre comment lier Java et Arduino ensemble dans un premier temps.
+                    </p>
+                </article>
+            </div>
+            <div id="divArduino3" class="insideAtelierN">
+                <article id="articleArduino7">
+                    <h3> Points positifs </h3>
+                    <p> - Travail de recherche et autodidacte obligatoire et poussant a l'autonomie.<br/>
+                        - Touche d'éléctronique avec le développement.<br>
+                        - Réalisation d'un produit complet.
+                    </p>
+                </article>
+                <article id="articleArduino8">
+                    <h3> Points négatifs </h3>
+                    <p> - Manque de cours sur les technologies abordées<br/>
+                        - Répartition du matériel entre les deux groupes parfois bloquant<br>
+                        - Manque de matériel
+                    </p>
+                </article>
+                <article id="articleArduino9">
+                    <h3> Idées d'améliorations </h3>
+                    <p> - Ajout de composants.(camera, serrure connectée, detecteur de gaz ...)<br/>
+                        - Ajout d'algo pertinent pour une meilleur gestion de l'energie (detecter une mauvaise
+                        isolation)
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="atelierN">
+            <h2><span class="previousAtelier" onclick="plusAteliers(-1)"> &#10094; </span> <span class="h2Atelier">Atelier 5</span>
+                : Site Vitrine et Fin
+                <span class="nextAtelier" onclick="plusAteliers(+1)">  &#10095; </span></h2>
+            <div id="divWeb1" class="insideAtelierN">
+                <article id="articleWeb1">
+                    <h3> Compétences </h3>
+                    <p> Cet atelier nous à permis de renforcer nos compétences déjà acquises en HTML - CSS et JS
+                        et de commencer à voir un petit bout de PHP avec le formulaire de contact.
+                    </p>
+                </article>
+                <article id="articleWeb2">
+                    <h3> Backlog </h3>
+                    <p> - Réalisation d'un site vitrine<br>
+                        - Présentation de l'organisation<br>
+                        - Présentation du projet<br>
+                        - Retour d'expériences
+                    </p>
+                </article>
+                <article id="articleWeb3">
+                    <h3> Retour d'expériences </h3>
+                    <p> Atelier simple et libre. Répartition du travail en groupe compliqué pour ce genre
+                        d'atelier. Reflexion sur l'UI et UX intéressante.
+                    </p>
+                </article>
+            </div>
+            <div id="divWeb2" class="insideAtelierN">
+                <article id="articleWeb4">
+                    <h3> Points positifs </h3>
+                    <p> - Liberté de création<br>
+                        - Un peu de légèreté après le rush des Atelier 3 et 4
+                    </p>
+                </article>
+                <article id="articleWeb5">
+                    <h3> Points négatifs </h3>
+                    <p> - Atelier mal placé dans la timeline<br>
+                        - Backlog techniquement trop simple
+                    </p>
+                </article>
+                <article id="articleWeb6">
+                    <h3> Idées d'améliorations </h3>
+                    <p> Il aurait fallut mettre ce genre d'atelier en initiation du projet digitalisé ,
+                        finir sur du HTML CSS après avoir fait de la POO avancé, Algo avancé, n'est pas optimal.
+                    </p>
+                </article>
+            </div>
+            <div id="divWeb3" class="insideAtelierN">
+                <article id="articleWeb7">
+                    <h3> Choses à changer </h3>
+                    <p> L'utilisation de Tuleap est peu intuitive, d'autant plus que l'on ne comprend pas ce que ça apporte,
+                        git étant largement suffisant avec le Scrumboard physique.<br>
+                        Équilibrer la difficulté des projets donnés aux différents groupes ainsi que le temps de chaque
+                        atelier.<br>
+                        Présence du PO renforcé.<br>
+
+
+                    </p>
+                </article>
+                <article id="articleWeb8">
+                    <h3> Avis général </h3>
+                    <p> Projet digitalisé très interessant d'un point de vu ludique et technique ,
+                        globalement plus complet que les projets abordés lors des semaines avec les alternants.
+                        Très bonne cohésion d'équipe en binôme.
+                    </p>
+                </article>
+                <article id="articleWeb9">
+                    <h3> Idées d'améliorations </h3>
+                    <p> Peut-être laisser libre choix du sujet du projet digitalisé avec validation du thème .<br>
+                        Changer la formule du projet digitalisé et faire plusieurs projets de trois semaines
+                        chacun, pour aborder différentes technologies.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="buttonInside">
+            <button id="btnInsideLeft" onclick="plusInside(-1)">&#10094;</button>
+            <button id="btnInsideRight" onclick="plusInside(+1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<section id="contact">
+    <form method="POST" id="formContact" action="assets/form.php">
+        <h2 id="titleContact">Vos coordonnées :</h2>
+
+        <div class="contactContent">
+            <input type="text" id="nom" name="nom" placeholder="Nom, prénom" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <input type="tel" id="telephone" name="telephone" placeholder="Telephone">
+        </div>
+
+        <h2>Message :</h2>
+        <div class="contactContent">
+            <textarea id="subject" name="subject" placeholder="Objet" required></textarea>
+        </div>
+
+
+        <div>
+            <textarea id="msg" name="userMessage" placeholder="Votre message" required></textarea>
+        </div>
+
+        <div id="wrapBouton">
+            <input type="submit" id="envoi">
+        </div>
+    </form>
+    <div id="contactLink">
+        <h2>Informations Contact</h2>
+        <h3>Coding Factory by ITESCIA</h3>
+        <p>Cap Cergy<br>
+            35 Boulevard du Port<br>
+            95000 Cergy</p>
+        <a id="acces" target="_blank"
+           href="https://codingfactory.fr/wp-content/uploads/2017/05/Acce%CC%80sCodingRER.pdf">
+            <i class="fas fa-map-marked-alt"></i>
+        </a>
+        <h3>Suivez Nous</h3>
+        <div class="socials">
+
+            <a id="facebook" target="_blank"
+               href="https://www.facebook.com/itescia">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a id="linkdn" target="_blank"
+               href="https://www.linkedin.com/school/coding-factory-itescia/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a id="instagram" target="_blank"
+               href="https://www.instagram.com/coding_factory_/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <h3>Nos Portfolios</h3>
+        <div class="socials">
+            <a target="_blank" href="http://www.corentinvallois.fr">
+                <button class="folio">Corentin Vallois</button>
+            </a>
+            <a target="_blank" href="http://www.furradev.fr">
+                <button class="folio">Brian Lecarpentier</button>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme"
+               target="_blank">Itescia</a>
+        </li>
+        <li>
+            <a href="https://codingfactory.fr" target="_blank">Coding Factory</a>
+        </li>
+    </ul>
+
+    <span id="copyright">©2020 Tous droits réservés</span>
+</footer>
+<script src="assets/js/ateliers.js"></script>
+</body>
+</html>
